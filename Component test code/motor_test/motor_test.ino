@@ -38,6 +38,7 @@ void loop() {
   motor1.run(BACKWARD);
   delay(500);
   motor1.run(RELEASE);  
+  delay(500);
   
   // Teste do motor 2
   Serial.println("Teste do motor 2");
@@ -49,6 +50,7 @@ void loop() {
   motor2.run(BACKWARD);
   delay(500);
   motor2.run(RELEASE); 
+  delay(500);
   
   // Teste do motor 3
   Serial.println("Teste do motor 3");
@@ -60,6 +62,7 @@ void loop() {
   motor3.run(BACKWARD);
   delay(500);
   motor3.run(RELEASE); 
+  delay(500);
   
   // Teste do motor 4
   Serial.println("Teste do motor 4");
@@ -71,30 +74,35 @@ void loop() {
   motor4.run(BACKWARD);
   delay(500);
   motor4.run(RELEASE); 
-
+  delay(500);
+  
   // Teste mover para frente
   Serial.println("Teste mover para frente");
   moverParaFrente();
-  delay(500);
+  delay(1500);
   ficarParado();
+  delay(1000);
 
   // Teste mover para tras
   Serial.println("Teste mover para tras");
   moverParaTras();
-  delay(500);
+  delay(1500);
   ficarParado();
+  delay(1000);
   
   // Teste virar para direita
   Serial.println("Teste virar para direita");
   virarParaDireita();
-  delay(500);
+  delay(1500);
   ficarParado();
-
+  delay(1000);
+  
   // Teste virar para esquerda
   Serial.println("Teste virar para esquerda");
   virarParaEsquerda();
-  delay(500);
+  delay(1500);
   ficarParado();
+  delay(1000);
 }
 
 void ficarParado(){
